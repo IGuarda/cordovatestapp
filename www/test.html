@@ -1,0 +1,124 @@
+<html>
+<body>
+
+<H2>deploy</H2>
+<a href="www/deploy.php">deploy</a><br><br>
+
+
+
+<H1>Registro</H1>
+<form action="registro.php" method="get">
+nombre: <input type="text" name="nombre"><br>
+apellidos: <input type="text" name="apellidos"><br>
+E-mail: <input type="text" name="email"><br>
+contraseña: <input type="password" name="pass"><br>
+<input type="submit">
+</form>
+<br><br>
+<H1>login</H1>
+<form action="login.php" method="get">
+E-mail: <input type="text" name="email"><br>
+contraseña: <input type="password" name="pass"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>obtener datos</H1>
+<form action="getdata.php" method="get">
+token: <input type="text" name="token"><br>
+dato: <input type="text" name="dato"><br>
+editar: <input type="checkbox" name="edit"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>obtener necesidad</H1>
+<form action="getnecesidad.php" method="get">
+token: <input type="text" name="token"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>obtener actividades</H1>
+<form action="getactividades.php" method="get">
+token: <input type="text" name="token"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>editar datos</H1>
+<form action="updatedata.php" method="get">
+token: <input type="text" name="token"><br>
+dato a editar: <input type="text" name="dato"><br>
+valor nuevo: <input type="text" name="valor"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>actividad</H1>
+<form action="crearactividad.php" method="get">
+token: <input type="text" name="token"><br>
+nombre <input type="text" name="nombre"><br>
+si la actividad es un unico dia solo se completa fecha fin<br>
+<input type="checkbox" name="diasem[]" value="L"> L<br>
+<input type="checkbox" name="diasem[]" value="M"> M<br>
+<input type="checkbox" name="diasem[]" value="X"> X<br>
+<input type="checkbox" name="diasem[]" value="J"> J<br>
+<input type="checkbox" name="diasem[]" value="V"> V<br>
+<input type="checkbox" name="diasem[]" value="S"> S<br>
+<input type="checkbox" name="diasem[]" value="D"> D<br>
+
+<!--fecha fin <input type="text" name="fin"><br>-->
+Hora inicio <input type="text" name="horaini"><br>
+Hora fin <input type="text" name="horafin"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>eliminar actividad</H1>
+<form action="delactividad.php" method="get">
+token: <input type="text" name="token"><br>
+nombre: <input type="text" name="nombre"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>Necesidad</H1>
+<form action="Necesidad.php" method="get">
+token: <input type="text" name="token"><br>
+nombre <input type="text" name="nombre"><br>
+tipo <input type="text" name="tipo"><br>
+descripción <input type="text" name="descripcion"><br>
+<input type="checkbox" name="diasem[]" value="L"> L<br>
+<input type="checkbox" name="diasem[]" value="M"> M<br>
+<input type="checkbox" name="diasem[]" value="X"> X<br>
+<input type="checkbox" name="diasem[]" value="J"> J<br>
+<input type="checkbox" name="diasem[]" value="V"> V<br>
+<input type="checkbox" name="diasem[]" value="S"> S<br>
+<input type="checkbox" name="diasem[]" value="D"> D<br>
+Hora1 <input type="text" name="hora1"><br>
+Hora2 <input type="text" name="hora2"><br>
+Hora3 <input type="text" name="hora3"><br>
+Hora4 <input type="text" name="hora4"><br>
+Hora5 <input type="text" name="hora5"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>eliminar necesidad</H1>
+<form action="delNecesidad.php" method="get">
+token: <input type="text" name="token"><br>
+nombre: <input type="text" name="nombre"><br>
+<input type="submit">
+</form>
+
+<br><br>
+<H1>eliminar sesión</H1>
+<form action="delsesion.php" method="get">
+token: <input type="text" name="token"><br>
+<input type="submit">
+</form>
+
+
+</body>
+</html>
